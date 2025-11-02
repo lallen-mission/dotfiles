@@ -1,3 +1,5 @@
+brew "kubectl"
+brew "k3d"
 brew "podman"
 brew "podman-compose"
 brew "uv"
