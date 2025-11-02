@@ -33,6 +33,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # nvm
 [ -s "$HOME/.nvm/nvm.sh" ] && source "$HOME/.nvm/nvm.sh"
 
+# env vars
+[ -s "$HOME/.env" ] && source "$HOME/.env"
+
 # bin paths
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/go/bin
@@ -54,7 +57,8 @@ alias dc="podman compose"
 alias docker="podman"
 alias x="exit"
 alias c="clear"
-alias tf="terraform"
+alias tf="tofu"
+alias terraform="tofu"
 
 # functions
 cdd() {
